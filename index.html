@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>AI Resume Analyzer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+linear-gradient(
+135deg,
+#0f172a,
+#1e293b,
+#334155
+);
+
+padding:30px;
+}
+
+.container{
+
+width:850px;
+
+padding:60px;
+
+text-align:center;
+
+background:
+rgba(255,255,255,0.08);
+
+border-radius:25px;
+
+backdrop-filter:blur(15px);
+}
+
+h1{
+
+font-size:4rem;
+
+color:white;
+
+margin-bottom:20px;
+}
+
+.highlight{
+color:#8b5cf6;
+}
+
+p{
+
+color:#cbd5e1;
+
+font-size:18px;
+
+margin-bottom:40px;
+}
+
+input{
+
+padding:12px;
+
+background:white;
+
+border-radius:10px;
+}
+
+button{
+
+margin-top:20px;
+
+padding:15px 30px;
+
+border:none;
+
+border-radius:12px;
+
+background:#8b5cf6;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+}
+
+.features{
+
+margin-top:40px;
+}
+
+.feature{
+
+display:inline-block;
+
+background:
+rgba(255,255,255,0.08);
+
+color:white;
+
+padding:10px 15px;
+
+margin:5px;
+
+border-radius:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+AI Resume
+<span class="highlight">Analyzer</span>
+</h1>
+
+<p>
+Upload your resume and get ATS scoring,
+skill analysis and recommendations.
+</p>
+
+<form
+action="/upload"
+method="POST"
+enctype="multipart/form-data"
+>
+
+<input
+type="file"
+name="resume"
+accept=".pdf"
+required
+
+>
+
+<br>
+
+<button type="submit">
+🚀 Analyze Resume
+</button>
+
+</form>
+
+<div class="features">
+
+<span class="feature">ATS Score</span>
+
+<span class="feature">Skill Analysis</span>
+
+<span class="feature">Resume Review</span>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
